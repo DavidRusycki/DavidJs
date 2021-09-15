@@ -1,8 +1,6 @@
 # SelectionJs
 - O selectionJs é basicamente uma especie de classe JS criada com o objetivo de possibilitar o set de valores em um elemento HTML <select>. Inicialmente conta com dois métodos principais que são criaSelectionFromArray e criaSelectionFromJson os nomes são bem sujestivos quanto a sua aplicação.
 
-
-
 ## criaSelectionFromArray
 - Necessita dois parametros "idElement" (Id do elemento HTML onde serão adicionados os valores.) e "aOptions" (Array de valores que serão adicionados) Seu uso se dá quando se tem um array de valores onde os indices são números. Onde ele seta no elemento <option> o .value e o .text estes serão os indices e valores do array passado como parâmetro.
 
