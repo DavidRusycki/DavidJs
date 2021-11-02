@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace</title>
+</head>
+
+<body>
+
+    <textarea name="texto" id="texto" cols="100" rows="30"></textarea> <br>
+    <input type="button" value="Remover Espaços Duplos" onclick="replaceEspacos()">
+
+    <script>
+    
+        replaceEspacos = function () {
+            let string = document.getElementById('texto').value;
+            string = string.replaceAll('  ', '#$%>');
+            string = string.replaceAll('#$%>', ' ');
+            console.log(string);
+            document.getElementById('texto').value = null;
+            document.getElementById('texto').value = string;
+        }
+    
+    </script>
+    
+</body>
+
+</html>
